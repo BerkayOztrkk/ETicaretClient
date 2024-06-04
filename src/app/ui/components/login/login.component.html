@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input #txtusername type="text"  class="form-control" id="username" placeholder="Username"
+                    aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text"></div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input #txtpassword type="password"  class="form-control" id="exampleInputPassword1"
+                    placeholder="Password">
+            </div>
+            <asl-google-signin-button></asl-google-signin-button>
+            
+
+            <button type="login" class="btn btn-primary" (click)="login(txtusername.value,txtpassword.value)">Login</button>
+            <a type="login" class="btn btn-secondary" style="margin-top: 5px;margin-left: 10px;"routerLink="/password-reset">Şifremi Unuttum</a>
+        
+    </div>
+    <div class="col-md-3"></div>
+</div>

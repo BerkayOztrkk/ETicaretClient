@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <form [formGroup]="frm" (ngSubmit)="onSubmit(frm.value)">
+            <div class="mb-3">
+                <label for="namesurname" class="form-label">Name Surname</label>
+                <input type="text" formControlName="namesurname" class="form-control" id="namesurname" placeholder="Name-Surname" >
+        <small class="form-text text-muted invalid-feedback" >Lütfen ad soyadı boş geçmeyiniz.</small>
+                
+            </div>
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" formControlName="Username" class="form-control" id="username" placeholder="Username" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text"></div>
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" formControlName="Email" class="form-control" id="exampleInputEmail1" placeholder="Email" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text"></div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" formControlName="Password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="mb-3">
+                <label for="confirmpassword" class="form-label">Confirm Password</label>
+                <input type="password" formControlName="confirmpassword" class="form-control" id="confirmpassword" placeholder="ConfirmPassword">
+            </div>
+           
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <div class="col-md-3"></div>
+</div>

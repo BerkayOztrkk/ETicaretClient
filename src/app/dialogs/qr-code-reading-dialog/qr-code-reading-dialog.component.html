@@ -1,0 +1,7 @@
+<h4>Product QR Code Reading</h4>
+
+<mat-form-field class="product-create">
+    <mat-label>Stock</mat-label>
+    <input matInput type="number" min="0"value="0" #txtStock>
+  </mat-form-field>
+  <ngx-scanner-qrcode #scanner="scanner" (event)="onEvent($event)"></ngx-scanner-qrcode>
